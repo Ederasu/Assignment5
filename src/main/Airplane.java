@@ -1,10 +1,12 @@
-// Airplane.java (Base Interface)
+package main;
+
+// Airplane.java
 public interface Airplane {
     void fly();
     void refuel();
 }
 
-// Concrete Airplane Implementations
+// Airplane Implementations
 
 // Passenger Plane
 class PassengerPlane implements Airplane {
