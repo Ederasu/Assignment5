@@ -1,4 +1,4 @@
-package main;
+package src.main.java.main;
 
 // Airplane.java
 public interface Airplane {

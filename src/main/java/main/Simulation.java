@@ -1,4 +1,4 @@
-package main;
+package src.main.java.main;
 
 class Simulation {
     private int cycles;
