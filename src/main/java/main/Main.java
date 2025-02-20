@@ -1,4 +1,4 @@
-package src.main.java.main;
+package main;
 public class Main {
     public static void main(String[] args) {
         Simulation simulation = new Simulation(5); // Run for 5 cycles

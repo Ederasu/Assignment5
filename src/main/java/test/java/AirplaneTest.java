@@ -1,4 +1,3 @@
-package test;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,3 +19,4 @@ class AirplaneTest {
         assertTrue(output.contains("Passenger plane is flying with passengers."));
         assertTrue(output.contains("Passenger plane is refueling."));
     }
+}
