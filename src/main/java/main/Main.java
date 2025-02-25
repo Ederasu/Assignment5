@@ -1,7 +1,7 @@
 package main;
 public class Main {
     public static void main(String[] args) {
-        Simulation simulation = new Simulation(5); // Run for 5 cycles
-        simulation.run();
+        Simulation simulation = new Simulation();
+        simulation.runSimulation();
     }
 }
