@@ -1,12 +1,9 @@
 package main;
 
-// Airplane.java
 public interface Airplane {
     void fly();
     void refuel();
 }
-
-// Airplane Implementations
 
 // Passenger Plane
 class PassengerPlane implements Airplane {
@@ -51,14 +48,16 @@ class PrivateJet implements Airplane {
 class AirplaneFactory {
     public static Airplane createAirplane(String type) {
         switch (type.toLowerCase()) {
-            case "passenger":
+            case "passenger" -> {
                 return new PassengerPlane();
-            case "cargo":
+            }
+            case "cargo" -> {
                 return new CargoPlane();
-            case "private":
+            }
+            case "private" -> {
                 return new PrivateJet();
-            default:
-                throw new IllegalArgumentException("Unknown airplane type: " + type);
+            }
+            default -> throw new IllegalArgumentException("Unknown airplane type: " + type);
         }
     }
 }

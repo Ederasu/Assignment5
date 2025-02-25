@@ -14,18 +14,14 @@ class Simulation {
             Airplane airplane = AirplaneFactory.createAirplane("passenger");
             airplane.fly();
             airplane.refuel();
-           
-            /* Future implementation
+
             Passenger passenger = PassengerFactory.createPassenger("economy");
             passenger.checkIn();
             passenger.board();
-            */
             
-            /* Future implementation
             AirportResource gate = AirportResourceFactory.createResource("gate");
             gate.allocate();
             gate.release();
-            */
         }
     }
 }
