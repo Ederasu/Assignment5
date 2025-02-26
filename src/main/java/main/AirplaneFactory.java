@@ -1,6 +1,7 @@
 package main;
 
 public class AirplaneFactory {
+
     public static Airplane createAirplane(String type) {
         switch (type.toLowerCase()) {
             case "passenger" -> {
@@ -12,7 +13,8 @@ public class AirplaneFactory {
             case "private" -> {
                 return new PrivateJet();
             }
-            default -> throw new IllegalArgumentException("Unknown airplane type: " + type);
+            default ->
+                throw new IllegalArgumentException("Unknown airplane type: " + type);
         }
     }
 }

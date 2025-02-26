@@ -1,15 +1,17 @@
 package main;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Simulation {
     private static final int TOTAL_CYCLES = 10;
     private static final int CYCLE_DURATION = 30; // 30 minutes per cycle
     private static final Random random = new Random();
     
-    private List<Airplane> airplanes;
-    private List<Passenger> passengers;
-    private List<AirportResource> resources;
+    private final List<Airplane> airplanes;
+    private final List<Passenger> passengers;
+    private final List<AirportResource> resources;
     
     public Simulation() {
         airplanes = new ArrayList<>();
