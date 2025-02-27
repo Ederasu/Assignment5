@@ -6,7 +6,7 @@ import objects.CargoPlane;
 import objects.Gate;
 import objects.PassengerPlane;
 
-public class AirportFactory implements Airport {
+public class AirportFactory implements AirportInter {
 
     public AirportFactory() {
     }

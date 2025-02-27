@@ -26,7 +26,7 @@ public class Main {
             System.out.println("--- Cycle " + cycle + " ---");
 
             // Generate arriving airplanes and passengers
-            if (random.nextDouble() < 0.3) {
+            if (random.nextDouble() < 0.75) {
                 String flightNumber = "ARR" + random.nextInt(1000);
                 Airplane airplane = airport.getFactory().createAirplane("Passenger", flightNumber);
                 if (airplane != null) {
@@ -41,7 +41,7 @@ public class Main {
             }
 
             // Generate departing airplanes and passengers
-            if (random.nextDouble() < 0.2) {
+            if (random.nextDouble() < 0.75) {
                 String flightNumber = "DEP" + random.nextInt(1000);
                 Airplane airplane = airport.getFactory().createAirplane("Passenger", flightNumber);
                 if (airplane != null) {

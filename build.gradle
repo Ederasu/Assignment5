@@ -17,7 +17,7 @@ dependencies {
     implementation files('cls/')
 }
 
-mainClassName = 'src/main/java/Main'
+mainClassName = 'Main'
 
 test {
     useJUnitPlatform()

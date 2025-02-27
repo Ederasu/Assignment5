@@ -5,6 +5,7 @@ import java.util.List;
 import airportresources.BagClaim;
 import airportresources.Resource;
 import airportresources.Security;
+import factory.AirportFactory;
 import objects.Airplane;
 import objects.Gate;
 import objects.Passenger;
@@ -15,13 +16,13 @@ public class Airport {
     private List<Gate> gates;
     private GateStrategy gateAllocationStrategy;
     private List<Observer> observers;
-    private Airport factory;
+    private AirportFactory factory;
     private List<Security> securityCheckpoints;
     private List<BagClaim> baggageCarousels;
     private List<Passenger> departingPassengers;
     private List<Passenger> arrivingPassengers;
 
-    public Airport(List<Gate> gates, GateStrategy gateAllocationStrategy, Airport factory, int securityCheckpointCount, int baggageCarouselCount) {
+    public Airport(List<Gate> gates, GateStrategy gateAllocationStrategy, AirportFactory factory, int securityCheckpointCount, int baggageCarouselCount) {
         this.gates = gates;
         this.gateAllocationStrategy = gateAllocationStrategy;
         this.observers = new ArrayList<>();
@@ -153,7 +154,7 @@ public class Airport {
         }
     }
 
-    public Airport getFactory() {
+    public AirportFactory getFactory() {
         return this.factory;
     }
 }
