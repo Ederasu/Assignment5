@@ -10,6 +10,7 @@ public class AirportFactory implements AirportInter {
 
     public AirportFactory() {
     }
+    
     @Override
     public Airplane createAirplane(String type, String flightNumber) {
         if ("Cargo".equalsIgnoreCase(type)) {

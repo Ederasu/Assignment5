@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +11,7 @@ import objects.Passenger;
 import observer.Observer;
 import strategy.GateStrategy;
 
+
 public class Airport {
     private List<Gate> gates;
     private GateStrategy gateAllocationStrategy;
@@ -22,6 +22,9 @@ public class Airport {
     private List<Passenger> departingPassengers;
     private List<Passenger> arrivingPassengers;
 
+    public Airport() {
+    }
+    
     public Airport(List<Gate> gates, GateStrategy gateAllocationStrategy, AirportFactory factory, int securityCheckpointCount, int baggageCarouselCount) {
         this.gates = gates;
         this.gateAllocationStrategy = gateAllocationStrategy;

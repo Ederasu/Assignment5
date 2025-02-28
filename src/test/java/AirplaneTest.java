@@ -1,9 +1,12 @@
 package src.test.java;
 
-import org.junit.Test;
-import objects.*;
-import static org.junit.Assert.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import objects.Airplane;
+import objects.CargoPlane;
+import objects.Passenger;
+import objects.PassengerPlane;
 
 public class AirplaneTest {
 

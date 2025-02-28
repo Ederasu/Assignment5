@@ -5,16 +5,16 @@ import objects.Airplane;
 import objects.Gate;
 import objects.Passenger;
 
-public class AirportObserver implements Observer{
+public class AirportObserver implements Observer {
     
     @Override
-    public void updateAirplaneArrival(Airplane airplane, Gate gate){
-        System.out.println("Observer: Airplane "+ airplane.getFlightNumber() + " arrived at gate: " + gate.getGateNumber());
+    public void updateAirplaneArrival(Airplane airplane, Gate gate) {
+        System.out.println("Observer: Airplane " + airplane.getFlightNumber() + " arrived at gate: " + gate.getGateNumber());
     }
     
     @Override
-    public void updateAirplaneDeparture(Airplane airplane, Gate gate){
-        System.out.println("Observer: Airplane "+ airplane.getFlightNumber() + " departed from gate: " + gate.getGateNumber());
+    public void updateAirplaneDeparture(Airplane airplane, Gate gate) {
+        System.out.println("Observer: Airplane " + airplane.getFlightNumber() + " departed from gate: " + gate.getGateNumber());
     }
     
     @Override

@@ -1,12 +1,16 @@
 package src.test.java;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import factory.AirportFactory;
 import objects.Airplane;
 import objects.CargoPlane;
 import objects.Gate;
 import objects.PassengerPlane;
-import static org.junit.jupiter.api.Assertions.*;
-
-import factory.AirportFactory;
 
 public class AirportFactoryTest {
 
